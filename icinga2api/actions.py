@@ -480,7 +480,7 @@ class Actions(Base):
         }
         if filter_vars:
             payload['filter_vars'] = filter_vars
-        if fixed:
+        if not fixed:
             payload['fixed'] = fixed
         if trigger_name:
             payload['trigger_name'] = trigger_name
